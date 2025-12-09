@@ -1,0 +1,234 @@
+body {
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/logo/mekii_logo.png") ;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    opacity: 0.5;
+    z-index: -1;
+}
+.hello {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px black;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    max-width: 300px;
+}
+.select {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+.hely {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px black;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    width: 190px;
+    height: 230px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.hely img {
+    width: 180px;
+    height: 140px;
+}
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    gap: 10px;
+}
+.categories {
+    width: 25%;
+    border-right: 2px solid black;
+    height: 100vh;
+    overflow-y: auto;
+}
+.categories div {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px black;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 2px 2px 3px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    width: 190px;
+    height: 230px;
+    padding-top: 5px;
+    margin: 50px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.categories img {
+    width: 180px;
+    height: 140px;
+}
+.products {
+    min-height: 100vh;
+    width: 75%;
+    height: 100vh;
+    overflow-y: auto;
+}
+.ikon {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px black;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    width: 190px;
+    height: 230px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.ikon img {
+    width: 180px;
+    height: 140px;
+}
+.select2 {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+}
+.termek_db {
+    display: none;
+    position: fixed;
+    margin-left: 500px;
+    margin-top: 300px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 2px 2px 3px black;
+}
+.termek_db img {
+    width: 300px;
+}
+.kosar {
+    display: none;
+    position: fixed;
+    margin-left: 50%;
+}
+.kosar-teljes {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cart-count {
+    position: fixed;
+    margin-left: 93%;
+    margin-bottom: 95%;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    text-align: center;
+    cursor: pointer;
+}
+.cart-count img {
+    width: 30px;
+}
+.kosar-sor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 30px;
+}
+.kosar-termek {
+    font-weight: bold;
+}
+.kosar-db {
+    margin: 0 10px;
+}
+.kosar-osszeg{
+    color: green;
+    font-weight: bold;
+}
+.remove-item {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#pay_screen {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+#pay_screen img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        gap: 5px;
+    }
+    .categories {
+        width: 30%;
+        height: calc(100vh - 80px);
+    }
+    .products {
+        width: 70%;
+        height: calc(100vh - 80px);
+    }
+    .ikon {
+        max-width: 180px;
+        margin: 10px auto;
+    }
+}

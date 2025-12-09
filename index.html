@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zsolt Kovacsics">
+    <title>Mekii - Főoldal</title>
+    <link rel="stylesheet" href="../mekii/css/style.css">
+    <script src="js/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="cart-count" id="cart-open">
+                <img src="../mekii/assets/logo/mekii_logoK.png" alt="kosar">
+                <span id="cart-count">0</span>
+            </div>
+        </header>
+        <div id="screen_start">
+        <div class="hello">
+            <h1>Üdvözlünk a Mekii-ben!</h1>
+            <h1>Állítsd össze rendelésed!</h1>
+        </div>
+        <div class="select">
+            <div class="hely" id="eat_here">
+                <img src="../mekii/assets/logo/helyben.png" alt="helyben_fogyaszt">
+                <h1>Helyben fogyasztás</h1>
+            </div>
+            <div class="hely" id="take_away">
+                <img src="../mekii/assets/logo/elvitel.png" alt="elvitelre">
+                <h1>Elvitelre</h1>
+            </div>
+        </div>
+        </div>
+        <div id="screen_order" style="display: none;">
+            <div class="layout">
+                <div class="categories">
+                    <div data-target="hambik">
+                        <img src="../mekii/assets/logo/mekii_logo2.png" alt="Hamburgerek">
+                        <h1>Hamburgerek</h1>
+                    </div>
+                    <div data-target="wrappok">
+                        <img src="../mekii/assets/logo/mekii_logo10.png" alt="Wrappok">
+                        <h1>Wrappok</h1>
+                    </div>
+                    <div data-target="desszert">
+                        <img src="../mekii/assets/logo/mekii_logo15.png" alt="Desszertek">
+                        <h1>Desszertek</h1>
+                    </div>
+                    <div data-target="burgonya">
+                        <img src="../mekii/assets/logo/mekii_logo18.png" alt="Burgonyák">
+                        <h1>Burgonyák</h1>
+                    </div>
+                    <div data-target="szoszok">
+                        <img src="../mekii/assets/logo/mekii_logo19.png" alt="Szószok">
+                        <h1>Szószok</h1>
+                    </div>
+                    <div data-target="sali">
+                        <img src="../mekii/assets/logo/mekii_logo28.png" alt="Saláták">
+                        <h1>Saláták</h1>
+                    </div>
+                    <div data-target="kave">
+                        <img src="../mekii/assets/logo/mekii_logo29.png" alt="Kávék">
+                        <h1>Kávék</h1>
+                    </div>
+                    <div data-target="udito">
+                        <img src="../mekii/assets/logo/mekii_logo32.png" alt="Üdítők">
+                        <h1>Üdítők</h1>
+                    </div>
+                </div>
+                <div class="products" id="products">
+                    <div id="hambik" style="display: none;">
+                    <div class="select2">
+                        <div class="ikon product-card" id="hamburger">
+                            <img src="../mekii/assets/logo/mekii_logo1.png" alt="hamburger">
+                            <h1>Hamburger</h1>
+                        </div>
+                        <div class="ikon product-card" id="sajtburger">
+                            <img src="../mekii/assets/logo/mekii_logo2.png" alt="sajtburger">
+                            <h1>Sajtburger</h1>
+                        </div>
+                        <div class="ikon product-card" id="csibeburger">
+                            <img src="../mekii/assets/logo/mekii_logo3.png" alt="csibeburger">
+                            <h1>Csibeburger</h1>
+                        </div>
+                    </div>
+                    <div class="select2">
+                        <div class="ikon product-card" id="halasburger">
+                            <img src="../mekii/assets/logo/mekii_logo4.png" alt="halasburger">
+                            <h1>Halasburger</h1>
+                        </div>
+                        <div class="ikon product-card" id="veganburger">
+                            <img src="../mekii/assets/logo/mekii_logo5.png" alt="veganburger">
+                            <h1>Vegánburger</h1>
+                        </div>
+                        <div class="ikon product-card" id="duplahusos">
+                            <img src="../mekii/assets/logo/mekii_logo6.png" alt="duplahusos">
+                            <h1>Duplahúsos Hamburger</h1>
+                        </div>
+                    </div>
+                    <div class="select2">
+                        <div class="ikon product-card" id="duplasajt">
+                            <img src="../mekii/assets/logo/mekii_logo7.png" alt="duplasajt">
+                            <h1>Duplasajtos Hamburger</h1>
+                        </div>
+                        <div class="ikon product-card" id="baconos">
+                            <img src="../mekii/assets/logo/mekii_logo8.png" alt="baconos">
+                            <h1>Baconos Hamburger</h1>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="wrappok" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="paníros">
+                                <img src="../mekii/assets/logo/mekii_logo9.png" alt="paníros">
+                                <h1>Wrapp panírozott hússal</h1>
+                            </div>
+                            <div class="ikon product-card" id="grill">
+                                <img src="../mekii/assets/logo/mekii_logo10.png" alt="grill">
+                                <h1>Wrapp grillezett hússal</h1>
+                            </div>
+                            <div class="ikon product-card" id="vegetarianus">
+                                <img src="../mekii/assets/logo/mekii_logo11.png" alt="vegetarianus">
+                                <h1>Wrapp vegetáriánus</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="desszert" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="epres">
+                                <img src="../mekii/assets/logo/mekii_logo12.png" alt="epres">
+                                <h1>Epres fagylalt</h1>
+                            </div>
+                            <div class="ikon product-card" id="csokis">
+                                <img src="../mekii/assets/logo/mekii_logo13.png" alt="csokis">
+                                <h1>Csokis fagylalt</h1>
+                            </div>
+                            <div class="ikon product-card" id="meggyes">
+                                <img src="../mekii/assets/logo/mekii_logo14.png" alt="meggyes">
+                                <h1>Meggyes fagylalt</h1>
+                            </div>
+                        </div>
+                        <div class="select2">
+                            <div class="ikon product-card" id="eper_csoki">
+                                <img src="../mekii/assets/logo/mekii_logo15.png" alt="eper-csoki">
+                                <h1>Epres-Csokis fagylalt</h1>
+                            </div>
+                            <div class="ikon product-card" id="meggy_csoki">
+                                <img src="../mekii/assets/logo/mekii_logo16.png" alt="meggy-csoki">
+                                <h1>Meggyes-Csokis fagylalt</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="burgonya" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="kisburgonya">
+                                <img src="../mekii/assets/logo/mekii_logo17.png" alt="kisburgonya">
+                                <h1>Sűltkrumpli kicsi</h1>
+                            </div>
+                            <div class="ikon product-card" id="közepesburgonya">
+                                <img src="../mekii/assets/logo/mekii_logo17.png" alt="közepesburgonya">
+                                <h1>Sűltkrumpli közepes</h1>
+                            </div>
+                            <div class="ikon product-card" id="nagykrumpli">
+                                <img src="../mekii/assets/logo/mekii_logo18.png" alt="nagykrumpli">
+                                <h1>Sűltkrumpli nagy</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="szoszok" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="ketchup">
+                                <img src="../mekii/assets/logo/mekii_logo19.png" alt="ketchup">
+                                <h1>Ketchup</h1>
+                            </div>
+                            <div class="ikon product-card" id="mustar">
+                                <img src="../mekii/assets/logo/mekii_logo20.png" alt="mustar">
+                                <h1>Mustár</h1>
+                            </div>
+                            <div class="ikon product-card" id="majonez">
+                                <img src="../mekii/assets/logo/mekii_logo21.png" alt="majonez">
+                                <h1>Majonéz</h1>
+                            </div>
+                        </div>
+                        <div class="select2">
+                            <div class="ikon product-card" id="ezersziget">
+                                <img src="../mekii/assets/logo/mekii_logo22.png" alt="ezersziget">
+                                <h1>Ezersziget</h1>
+                            </div>
+                            <div class="ikon product-card" id="kapros">
+                                <img src="../mekii/assets/logo/mekii_logo23.png" alt="kapros">
+                                <h1>Kapros -tejfölös</h1>
+                            </div>
+                            <div class="ikon product-card" id="fokhagyma">
+                                <img src="../mekii/assets/logo/mekii_logo24.png" alt="fokhagyma">
+                                <h1>Fokhagymás -tefölös</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sali" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="natur">
+                                <img src="../mekii/assets/logo/mekii_logo25.png" alt="natur">
+                                <h1>Natur saláta</h1>
+                            </div>
+                            <div class="ikon product-card" id="csirkes">
+                                <img src="../mekii/assets/logo/mekii_logo26.png" alt="csirkes">
+                                <h1>Csirkés saláta</h1>
+                            </div>
+                            <div class="ikon product-card" id="mexiko">
+                                <img src="../mekii/assets/logo/mekii_logo27.png" alt="mexiko">
+                                <h1>Mexikói saláta</h1>
+                            </div>
+                        </div>
+                        <div class="select2">
+                            <div class="ikon product-card" id="mediterran">
+                                <img src="../mekii/assets/logo/mekii_logo28.png" alt="mediterran">
+                                <h1>Mediterrán saláta</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="kave" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="rovid">
+                                <img src="../mekii/assets/logo/mekii_logo29.png" alt="rovid">
+                                <h1>Rövid kávé</h1>
+                            </div>
+                            <div class="ikon product-card" id="hosszu">
+                                <img src="../mekii/assets/logo/mekii_logo29.png" alt="hosszu">
+                                <h1>Hosszú kávé</h1>
+                            </div>
+                            <div class="ikon product-card" id="latte">
+                                <img src="../mekii/assets/logo/mekii_logo30.png" alt="latte">
+                                <h1>Latte</h1>
+                            </div>
+                        </div>
+                        <div class="select2">
+                            <div class="ikon product-card" id="cappuccino">
+                                <img src="../mekii/assets/logo/mekii_logo31.png" alt="cappuccino">
+                                <h1>Cappuccino</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="udito" style="display: none;">
+                        <div class="select2">
+                            <div class="ikon product-card" id="kiscola">
+                                <img src="../mekii/assets/logo/mekii_logo32.png" alt="kiscola">
+                                <h1>Cola kicsi</h1>
+                            </div>
+                            <div class="ikon product-card" id="nagycola">
+                                <img src="../mekii/assets/logo/mekii_logo32.png" alt="nagycola">
+                                <h1>Cola nagy</h1>
+                            </div>
+                            <div class="ikon product-card" id="kisnarancs">
+                                <img src="../mekii/assets/logo/mekii_logo33.png" alt="kisnarancs">
+                                <h1>Narancslé kicsi</h1>
+                            </div>
+                        </div>
+                        <div class="select2">
+                            <div class="ikon product-card" id="nagynarancs">
+                                <img src="../mekii/assets/logo/mekii_logo33.png" alt="nagynarancs">
+                                <h1>Narancslé nagy</h1>
+                            </div>
+                            <div class="ikon product-card" id="shake">
+                                <img src="../mekii/assets/logo/mekii_logo34.png" alt="shake">
+                                <h1>Epres shake</h1>
+                            </div>
+                            <div class="ikon product-card" id="froccs">
+                                <img src="../mekii/assets/logo/mekii_logo35.png" alt="froccs">
+                                <h1>Alma fröccs</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="termek_db" id="product_detail">
+                        <img  id="termek_kep" src="">
+                        <h1 id="termek_nev"></h1>
+                        <p>Ár: <span id="termek_ar"></span>Ft</p>
+                        <div class="darab">
+                            <button id="minus">-</button>
+                            <span id="ertek">1</span>
+                            <button id="plus">+</button>
+                        </div>
+                        <button id="addtocart">Kosárba</button>
+                        <button id="back">Vissza</button>
+                    </div>
+                </div>
+                    <div class="kosar" id="kosar">
+                        <h1>Kosár</h1>
+                        <div id="kosar_elemek"></div>
+                        <div class="kosar-teljes">Öszesen: <span id="kosar_teljes">0</span> FT</div>
+                        <button id="kosar_back">Vissza</button>
+                        <button id="pay">Fizetés</button>
+                    </div>
+            </div>
+        </div>
+        <div class="pay_screen" id="pay_screen" style="display: none;">
+            <img src="../mekii/assets/logo/mekii_logoPay.gif" alt="Sikeres Fizetés">
+        </div>
+    </body>
+</html>
