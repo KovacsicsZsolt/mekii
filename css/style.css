@@ -232,3 +232,61 @@ body::before {
         margin: 10px auto;
     }
 }
+
+@media (max-width: 650px) {
+    body {
+        overflow: hidden;
+        font-size: 50%;
+    }
+    #scree_strart {
+        display: flex;
+    }
+    #screen_start img {
+        width: 50%;
+    }
+    #screen_order {
+        display: block;
+    }
+    #screen_order img {
+        width: 50%;
+        height: 50%;
+    }
+    .ikon  {
+        width: 150px;
+        height: 150px;
+        font-size: 8px;
+    }
+    .categories div {
+        width: 150px;
+        height: 150px;
+        font-size: 8px;
+        margin: 10px;
+    }
+    .categories {
+        display: block;
+        text-align: center;
+        height: 100vh;
+    }
+    .select2 {
+        display: inline-block;
+        gap: 5px;
+        margin-left: 45%;
+        margin-top: 0px;
+    }
+    .termek_db {
+        width: 200px;
+        height: 200px;
+        margin-left: 200px;
+        margin-top: 150px;
+    }
+    .termek_db img {
+        width: 50%;
+        height: 50%;
+    }
+    .kosar {
+        height: 100vh;
+    }
+    .kosar-sor {
+        font-size: 10px;
+    }
+}
