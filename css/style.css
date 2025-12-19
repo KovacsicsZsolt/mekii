@@ -233,9 +233,9 @@ body::before {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
     body {
-        overflow: hidden;
+        overflow: scroll;
         font-size: 50%;
     }
     #scree_strart {
@@ -284,6 +284,7 @@ body::before {
         height: 50%;
     }
     .kosar {
+        overflow: scroll;
         height: 100vh;
     }
     .kosar-sor {
